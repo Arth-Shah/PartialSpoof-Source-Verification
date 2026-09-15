@@ -1,10 +1,5 @@
 # "Where and Who?" — Source Verification for Partial Speech Spoofing
 
-Official code for **"Where and Who?" Source Verification for Partial Speech Spoofing** (ICASSP 2027 submission).
-
-**Authors:** Arth J. Shah, Sumasri Talari, Hasini Veni Namana, Hemant A. Patil
-**Affiliation:** Speech Research Lab, DAU (Formerly DA-IICT)
-
 ## Overview
 
 This work proposes an **open-set, source-aware spoof localization framework** for partially spoofed speech. Instead of only asking *"is this audio fake?"* or *"where is it fake?"*, we treat each localized spoofed segment as a query and verify its source against a set of reference samples using an embedding-based source verification (SV) approach.
