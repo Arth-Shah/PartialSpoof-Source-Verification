@@ -74,19 +74,6 @@ Each feature/split combination is a self-contained notebook:
 
 Update dataset paths at the top of each notebook to point to your local copy of the regenerated PartialSpoof data.
 
-## Results
-
-**Table: Feature comparison (JI_bona / JER_spoof, %)**
-
-| Feature | Dev JI_bona | Dev JER_spoof | Eval JI_bona | Eval JER_spoof |
-|---|---|---|---|---|
-| MFCC | 9.46 | 16.09 | 22.68 | 29.02 |
-| LFCC | 3.49 | 12.6 | 28.82 | **21.5** |
-| Whisper | 4.02 | 11.91 | 18.77 | 32.55 |
-| HuBERT | 3.29 | 5.25 | **17.01** | 33.64 |
-
-See the paper (Tables 1–3) for attack-specific JER_spoof and comparison with prior work.
-
 ## Citation
 
 If you use this code, please cite:
@@ -95,7 +82,7 @@ If you use this code, please cite:
 @inproceedings{shah2027whereandwho,
   title     = {"Where and Who?" Source Verification for Partial Speech Spoofing},
   author    = {Shah, Arth J. and Talari, Sumasri and Namana, Hasini Veni and Patil, Hemant A.},
-  booktitle = {ICASSP},
+  booktitle = {Submitted at ICASSP},
   year      = {2027}
 }
 ```
