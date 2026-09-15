@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+plotly
+umap-learn
+librosa
+soundfile
+tqdm
+torch
+transformers
+jupyter
+notebook
