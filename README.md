@@ -16,7 +16,7 @@ Two conventional acoustic features (MFCC, LFCC) and two self-supervised speech r
 - **HuBERT + BiLSTM** achieves the best localization performance: **17.01% JI_bona** (evaluation set).
 - **LFCC + WIN** achieves the best source attribution performance: **21.5% JER_spoof**, a new SOTA for open-set partial spoof source verification.
 
-Full tables and attack-specific breakdowns are in the paper and in `docs/Supplementary_ICASSP.pdf`.
+Full tables and attack-specific breakdowns are in the paper and in `docs/reproducibility.pdf`.
 
 ## Repository structure
 
@@ -39,7 +39,7 @@ Full tables and attack-specific breakdowns are in the paper and in `docs/Supplem
 │       ├── MFCC-test-final-ps.ipynb
 │       └── Whisper-test-final-ps.ipynb
 ├── docs/
-│   └── Supplementary_ICASSP.pdf   # Supplementary material (architecture + dataset details)
+│   └── reproducibility.pdf   # reproducibility material (architecture + dataset details)
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -49,9 +49,9 @@ Full tables and attack-specific breakdowns are in the paper and in `docs/Supplem
 
 ## Dataset
 
-Experiments use a **regenerated version of the PartialSpoof dataset** [Zhang et al., 2022], built on top of ASVspoof 2019 LA. The regeneration follows the original 5-step PartialSpoof construction procedure (normalization, VAD, segment selection, substitution, temporal + balancing), with one addition: the generation-system identity (`gk`) of every substituted spoof segment is retained, to support open-set source attribution. Full construction details are in `docs/Supplementary_ICASSP.pdf`, Section 1.
+Experiments use a **regenerated version of the PartialSpoof dataset** [Zhang et al., 2022], built on top of ASVspoof 2019 LA. The regeneration follows the original 5-step PartialSpoof construction procedure (normalization, VAD, segment selection, substitution, temporal + balancing), with one addition: the generation-system identity (`gk`) of every substituted spoof segment is retained, to support open-set source attribution. Full construction details are in `docs/reproducibility.pdf`, Section 1.
 
-This dataset is **not included** in this repository — see the [PartialSpoof database](https://doi.org/10.1109/TASLP.2022.3233236) and [ASVspoof 2019](https://www.asvspoof.org/) for access, then follow the construction steps in the supplementary material to regenerate it with source labels.
+This dataset is **not included** in this repository — see the [PartialSpoof database](https://doi.org/10.1109/TASLP.2022.3233236) and [ASVspoof 2019](https://www.asvspoof.org/) for access, then follow the construction steps in the reproducibility material to regenerate it with source labels.
 
 ## Setup
 
